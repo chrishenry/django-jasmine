@@ -1,7 +1,7 @@
 import os
 import django
 
-if django.VERSION >= (1, 5):
+if django.VERSION >= (1, 5) and django.VERSION <= (1, 8):
     from django.conf.urls import patterns, url
 else:
     from django.conf.urls import url
